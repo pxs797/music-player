@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 import pagesRoutes from '../pages'
 
 const routes = [
-  {
-    path: '/',
-    redirect: { name: 'discover' }
-  },
+  // {
+  //   path: '/',
+  //   redirect: { name: 'discover' }
+  // },
   ...pagesRoutes
 ]
 
