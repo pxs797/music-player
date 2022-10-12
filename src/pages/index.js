@@ -1,5 +1,9 @@
-import discoverRoutes from "./discover"
+import homeRoutes from "./home"
+import categoryRoutes from "./category"
+import errorRoutes from "./error"
 
 export default [
-  ...discoverRoutes
+  ...homeRoutes,
+  ...categoryRoutes,
+  ...errorRoutes
 ]
