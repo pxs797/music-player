@@ -1,5 +1,18 @@
+<script setup>
+import { onMounted } from 'vue'
+import { getToken } from './utils/auth.js'
+import Application from '@/layouts/Application.vue'
+
+onMounted(async () => {
+  // const { access_token: token} = await getToken()
+  // localStorage.setItem('token', token)
+  // console.log(token);
+})
+
+</script>
+
 <template>
-  <div class="w-screen h-screen bg-blue-900">
-    <router-view></router-view>
-  </div>
+  <application>
+    <router-view />
+  </application>
 </template>
