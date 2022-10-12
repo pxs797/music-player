@@ -1,0 +1,1 @@
+const e=async(t,a)=>{const s=localStorage.getItem("token");return await(await fetch(`https://api.spotify.com/v1/${t}`,{method:a,headers:{Authorization:"Bearer "+s}})).json()},c=async()=>(await e("browse/categories?locale=sv_SE","GET")).categories.items,n=async t=>await e(`browse/categories/${t}`,"GET");export{n as a,c as g};
