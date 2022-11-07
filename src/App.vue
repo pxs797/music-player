@@ -15,3 +15,15 @@ onMounted(async () => {
     <router-view />
   </application>
 </template>
+
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+div::-webkit-scrollbar {
+  display: none;
+}
+</style>
